@@ -14,7 +14,7 @@ function Header() {
 function App() {
   return (
     <div>
-
+      <Header />
       <main>
         <h2>Time to get started!</h2>
         <h3>But slowly...</h3>
@@ -22,5 +22,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
