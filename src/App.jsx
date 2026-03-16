@@ -27,7 +27,7 @@ function App() {
       <Header />
       <main>
         <h2>Time to get started!</h2>
-        <h3>But slowly...</h3>
+        <h2>But slowly...</h2>
       </main>
     </div>
   );
