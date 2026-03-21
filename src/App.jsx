@@ -20,7 +20,7 @@ function Header() {
   </header>
   );
 }
-
+/*
 function CoreConcept(props) {
   return <li>
     <img src={props.img} alt= {props.title}/>
@@ -28,7 +28,14 @@ function CoreConcept(props) {
     <p>{props.description}</p>
   </li>
 }
-
+*/
+function CoreConcept({img, title, description}) {
+  return <li>
+    <img src={img} alt= {title}/>
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </li>
+}
 
 function App() {
   return (
@@ -42,7 +49,7 @@ function App() {
           img={componentsImg}/>
           <CoreConcept title={CORE_CONCEPTS[2].title} img={CORE_CONCEPTS[2].img} description="Data we pass to react components that make them show dynamic data with only 1 component. We do this with HTML"></CoreConcept>
           <CoreConcept title={CORE_CONCEPTS[1].title} description={CORE_CONCEPTS[1].description} img={CORE_CONCEPTS[1].img}></CoreConcept>
-          <CoreConcept title={CORE_CONCEPTS[3].title} img={CORE_CONCEPTS[3].img} description={CORE_CONCEPTS[3].description}></CoreConcept>
+          <CoreConcept {...CORE_CONCEPTS[3]}></CoreConcept>
         </ul>
 
         </section>
