@@ -1,5 +1,7 @@
 import reactImg from './assets/react-core-concepts.png';
 import componentsImg from './assets/components.png'
+import { CORE_CONCEPTS } from './data.js';
+
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 
 function genRandomInt(max) {
@@ -21,7 +23,7 @@ function Header() {
 
 function CoreConcept(props) {
   return <li>
-    <img src={props.img} alt= "..."/>
+    <img src={props.img} alt= {props.title}/>
     <h3>{props.title}</h3>
     <p>{props.description}</p>
   </li>
@@ -38,13 +40,13 @@ function App() {
         <ul>
           <CoreConcept title="Components" description="The core UI building block, that adds complexity and functionality to our code" 
           img={componentsImg}/>
-          <CoreConcept></CoreConcept>
-          <CoreConcept></CoreConcept>
-          <CoreConcept></CoreConcept>
+          <CoreConcept title={CORE_CONCEPTS[2].title} img={CORE_CONCEPTS[2].img} description="Data we pass to react components that make them show dynamic data with only 1 component. We do this with HTML"></CoreConcept>
+          <CoreConcept title={CORE_CONCEPTS[1].title} description={CORE_CONCEPTS[1].description} img={CORE_CONCEPTS[1].img}></CoreConcept>
+          <CoreConcept title={CORE_CONCEPTS[3].title} img={CORE_CONCEPTS[3].img} description={CORE_CONCEPTS[3].description}></CoreConcept>
         </ul>
 
         </section>
-        <h2>But slowly...</h2>
+        
       </main>
     </div>
   );
