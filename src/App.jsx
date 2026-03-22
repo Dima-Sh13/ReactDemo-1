@@ -2,7 +2,7 @@
 import { CORE_CONCEPTS } from './data.js';
 import CoreConcept from './components/CoreConcepts.jsx';
 import Header from './components/Header.jsx';
-
+import TabButton from './components/TabButton.jsx';
 
 
 
@@ -10,6 +10,12 @@ import Header from './components/Header.jsx';
 
 
 function App() {
+  function handleSelect(){
+    console.log("hello world")
+  }
+  
+  
+  
   return (
     <div>
       <Header />
@@ -25,6 +31,16 @@ function App() {
           <CoreConcept {...CORE_CONCEPTS[3]}></CoreConcept>
           
         </ul>
+
+        </section>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+            <TabButton onSelect={handleSelect}>{CORE_CONCEPTS[0].title}</TabButton>
+            <TabButton onSelect={handleSelect}>{CORE_CONCEPTS[1].title}</TabButton>
+            <TabButton onSelect={handleSelect}>{CORE_CONCEPTS[2].title}</TabButton>
+            <TabButton onSelect={handleSelect}>{CORE_CONCEPTS[3].title}</TabButton>
+          </menu>
 
         </section>
         
