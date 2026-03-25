@@ -1,3 +1,4 @@
+import { useState } from 'react';
 
 import { CORE_CONCEPTS } from './data.js';
 import CoreConcept from './components/CoreConcepts.jsx';
@@ -10,8 +11,12 @@ import TabButton from './components/TabButton.jsx';
 
 
 function App() {
-  function handleSelect(){
-    console.log("hello world")
+  let [ selectedTopic, setSelectedTopic ] = useState('Please click a button');
+
+
+  function handleSelect(selectedButton){
+    setSelectedTopic(selectedButton);
+    console.log(selectedTopic)
   }
   
   
@@ -36,12 +41,13 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={handleSelect}>{CORE_CONCEPTS[0].title}</TabButton>
-            <TabButton onSelect={handleSelect}>{CORE_CONCEPTS[1].title}</TabButton>
-            <TabButton onSelect={handleSelect}>{CORE_CONCEPTS[2].title}</TabButton>
-            <TabButton onSelect={handleSelect}>{CORE_CONCEPTS[3].title}</TabButton>
+            <TabButton onSelect={() => handleSelect(CORE_CONCEPTS[0].title)}>{CORE_CONCEPTS[0].title}</TabButton>
+            <TabButton onSelect={() => handleSelect(CORE_CONCEPTS[1].title)}>{CORE_CONCEPTS[1].title}</TabButton>
+            <TabButton onSelect={() => handleSelect(CORE_CONCEPTS[2].title)}>{CORE_CONCEPTS[2].title}</TabButton>
+            <TabButton onSelect={() => handleSelect(CORE_CONCEPTS[3].title)}>{CORE_CONCEPTS[3].title}</TabButton>
+            
           </menu>
-
+          {selectedTopic}
         </section>
         
       </main>
