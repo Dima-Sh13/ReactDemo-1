@@ -4,14 +4,14 @@ import { CORE_CONCEPTS } from './data.js';
 import CoreConcept from './components/CoreConcepts.jsx';
 import Header from './components/Header.jsx';
 import TabButton from './components/TabButton.jsx';
-
+import { EXAMPLES } from './data.js';
 
 
 
 
 
 function App() {
-  let [ selectedTopic, setSelectedTopic ] = useState('Please click a button');
+  let [ selectedTopic, setSelectedTopic ] = useState("Components");
 
 
   function handleSelect(selectedButton){
@@ -47,7 +47,16 @@ function App() {
             <TabButton onSelect={() => handleSelect(CORE_CONCEPTS[3].title)}>{CORE_CONCEPTS[3].title}</TabButton>
             
           </menu>
-          {selectedTopic}
+          <div id='tab-content'>
+            <h3>{EXAMPLES[selectedTopic].title}</h3>
+            <p>{EXAMPLES[selectedTopic].description}</p>
+            <pre>
+              <code>
+                {EXAMPLES[selectedTopic].code}
+              </code>
+            </pre>
+
+          </div>
         </section>
         
       </main>
