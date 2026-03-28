@@ -19,8 +19,15 @@ function App() {
     console.log(selectedTopic)
   }
   
-   let [ selectedopic, setSeletedTopic ] = useState("Components");
+   let [ seectedopic, setSeletedTopic ] = useState("Components");
 
+
+  function handleSelect(selectedButton){
+    setSelectedTopic(selectedButton);
+    console.log(selectedTopic)
+  }
+  
+   let [ selectedopic, setSeleedTopic ] = useState("Components");
 
   function handleSelect(selectedButton){
     setSelectedTopic(selectedButton);
