@@ -27,7 +27,7 @@ function App() {
         <section id="core-concepts">
         <h2>Core Concepts</h2>
         <ul>
-          {CORE_CONCEPTS.map((item) => <CoreConcept {...item } />)}
+          {CORE_CONCEPTS.map((item) => <CoreConcept key={item.title} {...item } />)}
           
 
         </ul>
@@ -67,3 +67,8 @@ function App() {
 
 
 export default App;
+  <ul>
+        {Todo(DUMMY_TODOS[0])}
+        {Todo(DUMMY_TODOS[1])}
+        {Todo(DUMMY_TODOS[2])}
+        </ul>
