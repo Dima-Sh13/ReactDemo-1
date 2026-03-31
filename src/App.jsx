@@ -67,8 +67,4 @@ function App() {
 
 
 export default App;
-  <ul>
-        {Todo(DUMMY_TODOS[0])}
-        {Todo(DUMMY_TODOS[1])}
-        {Todo(DUMMY_TODOS[2])}
-        </ul>
+  
