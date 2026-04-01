@@ -59,11 +59,6 @@ function App() {
     </div>
   );
 }
-<div data-testid="alert" id="alert">
-          <h2>Are you sure?</h2>
-          <p>These changes can't be reverted!</p>
-          <button onClick={() => handleSelect("")}>Proceed</button>
-        </div>
 
 
 export default App;
