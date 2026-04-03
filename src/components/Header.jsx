@@ -8,9 +8,7 @@ function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
 }
 
-function genRanddomInt(max) {
-  return Math.floor(Math.random() * (max + 1));
-}
+
 
 
 export default function Header() {
