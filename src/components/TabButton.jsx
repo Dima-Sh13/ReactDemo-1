@@ -1,5 +1,10 @@
 export default function TabButton({children, onSelect, isSelected}){
-    
+     function name(params) {
+     if(params) {
+        console.log("hay params")
+
+     }   
+    }
     
     return (
     <li>
