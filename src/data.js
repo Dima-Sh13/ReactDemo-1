@@ -79,3 +79,21 @@ function Counter() {
 }`,
   },
 };
+
+
+function Counter() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  function handleClick() {
+    setIsVisible(true);
+  }
+
+  return (
+    <div>
+      <button onClick={handleClick}>Show Details</button>
+      {isVisible && <p>Amazing details!</p>}
+    </div>
+  );
+}`,
+  },
+};
