@@ -64,5 +64,11 @@ function sum(a,b){
   console.log("el resultado de a +b es ", a+b)
   return a + b
 } 
+
+let calculator = function(a,b) {
+  suma: (a,b) => {return a + b}
+}
+
+
 export default App;
   
