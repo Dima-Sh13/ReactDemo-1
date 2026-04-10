@@ -68,20 +68,9 @@ function sum(a,b){
 let calculator = function(a,b) {
   suma: (a,b) => {return a + b}
 }
-let caglculator = function(a,b) {
-  suma: (a,b) => {return a + b}
-}
-let calcujlator = function(a,b) {
-  suma: (a,b) => {return a + b}
-}
-let calcuklator = function(a,b) {
-  suma: (a,b) => {return a + b}
-}
-let calclulator = function(a,b) {
-  suma: (a,b) => {return a + b}
-}
-let calculñator = function(a,b) {
-  suma: (a,b) => {return a + b}
+
+function greeting(name) {
+  return "hello" + name
 }
 
 
