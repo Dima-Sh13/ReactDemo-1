@@ -72,6 +72,15 @@ let calculator = function(a,b) {
 function greeting(name) {
   return "hello" + name
 }
+function greeting(name) {
+  return "hello" + name
+}
+function greeting(name) {
+  return "hello" + name
+}
+function greeting(name) {
+  return "hello" + name
+}
 
 
 export default App;
