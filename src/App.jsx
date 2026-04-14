@@ -81,6 +81,42 @@ function greeting(name) {
 function greeting(name) {
   return "hello" + name
 }
+function greeting(name) {
+  return "hello" + name
+}
+function greeting(name) {
+  return "hello" + name
+}
+function greeting(name) {
+  return "hello" + name
+}
+function greeting(name) {
+  return "hello" + name
+}
+function greeting(name) {
+  return "hello" + name
+}
+function greeting(name) {
+  return "hello" + name
+}
+function greeting(name) {
+  return "hello" + name
+}
+function greeting(name) {
+  return "hello" + name
+}
+function greeting(name) {
+  return "hello" + name
+}
+function greeting(name) {
+  return "hello" + name
+}
+function greeting(name) {
+  return "hello" + name
+}
+function greeting(name) {
+  return "hello" + name
+}
 
 
 export default App;
