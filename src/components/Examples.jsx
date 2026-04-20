@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { EXAMPLES } from "../data";
+
+import Section from "./Section";
 import TabButton from "./TabButton";
 export default function Examples() {
     let [ selectedTopic, setSelectedTopic ] = useState();
@@ -9,7 +11,8 @@ export default function Examples() {
         setSelectedTopic(selectedButton);
         console.log(selectedTopic)
       }
-    return(<section id="examples">
+    return(
+    <Section title="Examples" id="examples">
           <h2>Examples</h2>
           <menu>
             <TabButton isSelected={selectedTopic === CORE_CONCEPTS[0].title } onSelect={() => handleSelect(CORE_CONCEPTS[0].title)}>{CORE_CONCEPTS[0].title}</TabButton>
@@ -29,5 +32,5 @@ export default function Examples() {
 
           </div>}
            
-        </section>)
+        </Section>)
 };
