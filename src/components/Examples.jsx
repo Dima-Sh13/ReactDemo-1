@@ -15,10 +15,10 @@ export default function Examples() {
     <Section title="Examples" id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton isSelected={selectedTopic === CORE_CONCEPTS[0].title } onSelect={() => handleSelect(CORE_CONCEPTS[0].title)}>{CORE_CONCEPTS[0].title}</TabButton>
-            <TabButton isSelected={selectedTopic === CORE_CONCEPTS[1].title } onSelect={() => handleSelect(CORE_CONCEPTS[1].title)}>{CORE_CONCEPTS[1].title}</TabButton>
-            <TabButton isSelected={selectedTopic === CORE_CONCEPTS[2].title } onSelect={() => handleSelect(CORE_CONCEPTS[2].title)}>{CORE_CONCEPTS[2].title}</TabButton>
-            <TabButton isSelected={selectedTopic === CORE_CONCEPTS[3].title } onSelect={() => handleSelect(CORE_CONCEPTS[3].title)}>{CORE_CONCEPTS[3].title}</TabButton>
+            <TabButton isSelected={selectedTopic === CORE_CONCEPTS[0].title } onClick={() => handleSelect(CORE_CONCEPTS[0].title)}>{CORE_CONCEPTS[0].title}</TabButton>
+            <TabButton isSelected={selectedTopic === CORE_CONCEPTS[1].title } onClick={() => handleSelect(CORE_CONCEPTS[1].title)}>{CORE_CONCEPTS[1].title}</TabButton>
+            <TabButton isSelected={selectedTopic === CORE_CONCEPTS[2].title } onClick={() => handleSelect(CORE_CONCEPTS[2].title)}>{CORE_CONCEPTS[2].title}</TabButton>
+            <TabButton isSelected={selectedTopic === CORE_CONCEPTS[3].title } onClick={() => handleSelect(CORE_CONCEPTS[3].title)}>{CORE_CONCEPTS[3].title}</TabButton>
             
           </menu>
             {!selectedTopic ? <p>Please select a topic.</p>: <div id='tab-content'>

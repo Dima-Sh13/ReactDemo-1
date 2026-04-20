@@ -1,4 +1,4 @@
-export default function TabButton({children, onSelect, isSelected}){
+export default function TabButton({children, isSelected, onSelect}){
      function name(params) {
      if(params) {
         console.log("hay params")
