@@ -6,4 +6,6 @@ export default function Tabs({ children }) {
     {children}
 
     </>
+
+    
 }

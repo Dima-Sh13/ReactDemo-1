@@ -4,4 +4,8 @@ export default function Section({ title, children, ...props}) {
         {children}
 
     </section>
+
+function normal(c) {
+    return (c)
+}
 }
