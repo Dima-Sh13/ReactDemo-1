@@ -5,7 +5,4 @@ export default function Section({ title, children, ...props}) {
 
     </section>
 
-function normal(c) {
-    return (c)
-}
 }
